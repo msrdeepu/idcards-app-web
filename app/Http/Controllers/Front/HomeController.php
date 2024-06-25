@@ -11,4 +11,9 @@ class HomeController extends Controller
     {
         return view('user.dashboard');
     }
+
+    public function home()
+    {
+        return view('guest.home');
+    }
 }
