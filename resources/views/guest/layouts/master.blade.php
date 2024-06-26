@@ -2,175 +2,226 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+    <title>GrowMark - Digital Marketing HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
         rel="stylesheet">
 
-    <title>Finance Business HTML5 Template</title>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
+    <!-- Libraries Stylesheet -->
+    <link href="{{ asset('website/lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('website/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('website/lib/lightbox/css/lightbox.min.css" rel="stylesheet') }}">
 
-    <link rel="stylesheet" href="{{ asset('website/vendor/bootstrap/css/bootstrap.min.css') }}">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ asset('website/css/bootstrap.min.css') }}" rel="stylesheet">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{{ asset('website/assets/css/fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('website/assets/css/templatemo-finance-business.css') }}">
-    <link rel="stylesheet" href="{{ asset('website/assets/css/owl.css') }}">
-
+    <!-- Template Stylesheet -->
+    <link href="{{ asset('website/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
-    <!-- ***** Preloader End ***** -->
+    <!-- Spinner End -->
+
+
+
+
 
     @include('guest.layouts.navbar')
 
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    @include('guest.layouts.banner')
-    <!-- Banner Ends Here -->
 
-    <div class="request-form">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h4>Request a call back right now ?</h4>
-                    <span>Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</span>
-                </div>
-                <div class="col-md-4">
-                    <a href="contact.html" class="border-button">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    @yield('content')
 
-    <div class="services">
+
+    {{-- <!-- About Start -->
+    <div class="container-xxl about my-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <h2>Financial <em>Services</em></h2>
-                        <span>Aliquam id urna imperdiet libero mollis hendrerit</span>
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="service-item">
-                        <img src="assets/images/service_01.jpg" alt="">
-                        <div class="down-content">
-                            <h4>Digital Currency</h4>
-                            <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare
-                                leo tortor.</p>
-                            <a href="" class="filled-button">Read More</a>
+                <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white rounded-top p-5 mt-lg-5">
+                        <p class="fs-5 fw-medium text-primary">About Us</p>
+                        <h1 class="display-6 mb-4">The Best Marketing Agency to Improve Your Business</h1>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+                            diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                        <div class="row g-5 pt-2 mb-5">
+                            <div class="col-sm-6">
+                                <img class="img-fluid mb-4" src="img/icon/icon-5.png" alt="">
+                                <h5 class="mb-3">Managed Services</h5>
+                                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-fluid mb-4" src="img/icon/icon-2.png" alt="">
+                                <h5 class="mb-3">Dedicated Experts</h5>
+                                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item">
-                        <img src="assets/images/service_02.jpg" alt="">
-                        <div class="down-content">
-                            <h4>Market Analysis</h4>
-                            <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare
-                                leo tortor.</p>
-                            <a href="" class="filled-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item">
-                        <img src="assets/images/service_03.jpg" alt="">
-                        <div class="down-content">
-                            <h4>Historical Data</h4>
-                            <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare
-                                leo tortor.</p>
-                            <a href="" class="filled-button">Read More</a>
-                        </div>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Explore More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- About End --> --}}
 
-    <div class="fun-facts">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="left-content">
-                        <span>Lorem ipsum dolor sit amet</span>
-                        <h2>Our solutions for your <em>business growth</em></h2>
-                        <p>Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum.
-                            Nulla luctus laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue.
-                            <br><br>Fusce et venenatis ex. Quisque varius, velit quis dictum sagittis, odio velit
-                            molestie nunc, ut posuere ante tortor ut neque.
-                        </p>
-                        <a href="" class="filled-button">Read More</a>
-                    </div>
+
+    {{-- <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col-md-6 align-self-center">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="count-area-content">
-                                <div class="count-digit">945</div>
-                                <div class="count-title">Work Hours</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="count-area-content">
-                                <div class="count-digit">1280</div>
-                                <div class="count-title">Great Reviews</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="count-area-content">
-                                <div class="count-digit">578</div>
-                                <div class="count-title">Projects Done</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="count-area-content">
-                                <div class="count-digit">26</div>
-                                <div class="count-title">Awards Won</div>
-                            </div>
-                        </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Video Modal End --> --}}
 
-    <div class="more-info">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="more-info-content">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="left-image">
-                                    <img src="assets/images/more-info.jpg" alt="">
+
+    <!-- Service Start -->
+    <div id="serviceSection">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+
+                    <h1 class="display-5 mb-5 text-white">Offered Services</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item position-relative h-100">
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                    style="width: 64px; height: 64px;">
+                                    <img class="img-fluid" src="{{ asset('website/img/icon/icon-5.png') }}"
+                                        alt="Icon">
                                 </div>
+                                <h5 class="mb-3">Digital Marketing</h4>
+                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                        sed
+                                        diam
+                                        stet</p>
                             </div>
-                            <div class="col-md-6 align-self-center">
-                                <div class="right-content">
-                                    <span>Who we are</span>
-                                    <h2>Get to know about <em>our company</em></h2>
-                                    <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla
-                                        conse quat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus
-                                        ipsum in cursus<br><br>Praes end at dictum metus. Morbi id hendrerit lectus, nec
-                                        dapibus ex. Etiam ipsum quam, luctus eu egestas eget, tincidunt</p>
-                                    <a href="#" class="filled-button">Read More</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item position-relative h-100">
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                    style="width: 64px; height: 64px;">
+                                    <img class="img-fluid" src="{{ asset('website/img/icon/icon-6.png') }}"
+                                        alt="Icon">
                                 </div>
+                                <h5 class="mb-3">Internet Marketing</h4>
+                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                        sed
+                                        diam
+                                        stet</p>
                             </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item position-relative h-100">
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                    style="width: 64px; height: 64px;">
+                                    <img class="img-fluid" src="{{ asset('website/img/icon/icon-7.png') }}"
+                                        alt="Icon">
+                                </div>
+                                <h5 class="mb-3">Content Marketing</h4>
+                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                        sed
+                                        diam
+                                        stet</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item position-relative h-100">
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                    style="width: 64px; height: 64px;">
+                                    <img class="img-fluid" src="{{ asset('website/img/icon/icon-8.png') }}"
+                                        alt="Icon">
+                                </div>
+                                <h5 class="mb-3">Social Marketing</h4>
+                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                        sed
+                                        diam
+                                        stet</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item position-relative h-100">
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                    style="width: 64px; height: 64px;">
+                                    <img class="img-fluid" src="{{ asset('website/img/icon/icon-9.png') }}"
+                                        alt="Icon">
+                                </div>
+                                <h5 class="mb-3">B2B Marketing</h4>
+                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                        sed
+                                        diam
+                                        stet</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item position-relative h-100">
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                    style="width: 64px; height: 64px;">
+                                    <img class="img-fluid" src="{{ asset('website/img/icon/icon-10.png') }}"
+                                        alt="Icon">
+                                </div>
+                                <h5 class="mb-3">E-mail Marketing</h4>
+                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                        sed
+                                        diam
+                                        stet</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -178,209 +229,309 @@
         </div>
     </div>
 
-    <div class="testimonials">
+    <!-- Service End -->
+
+
+    {{-- <!-- Project Start -->
+    <div class="container-xxl pt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <h2>What they say <em>about us</em></h2>
-                        <span>testimonials from our greatest clients</span>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="owl-testimonials owl-carousel">
-
-                        <div class="testimonial-item">
-                            <div class="inner-content">
-                                <h4>George Walker</h4>
-                                <span>Chief Financial Analyst</span>
-                                <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet
-                                    malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
-                            </div>
-                            <img src="http://placehold.it/60x60" alt="">
-                        </div>
-
-                        <div class="testimonial-item">
-                            <div class="inner-content">
-                                <h4>John Smith</h4>
-                                <span>Market Specialist</span>
-                                <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc.
-                                    Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
-                            </div>
-                            <img src="http://placehold.it/60x60" alt="">
-                        </div>
-
-                        <div class="testimonial-item">
-                            <div class="inner-content">
-                                <h4>David Wood</h4>
-                                <span>Chief Accountant</span>
-                                <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus
-                                    maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor
-                                    consectetur tristique."</p>
-                            </div>
-                            <img src="http://placehold.it/60x60" alt="">
-                        </div>
-
-                        <div class="testimonial-item">
-                            <div class="inner-content">
-                                <h4>Andrew Boom</h4>
-                                <span>Marketing Head</span>
-                                <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae
-                                    semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
-                            </div>
-                            <img src="http://placehold.it/60x60" alt="">
-                        </div>
-
-                    </div>
-                </div>
+            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">Our Projects</p>
+                <h1 class="display-5 mb-5">We've Done Lot's of Awesome Projects</h1>
             </div>
-        </div>
-    </div>
-
-
-
-    <div class="partners">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-partners owl-carousel">
-
-                        <div class="partner-item">
-                            <img src="assets/images/client-01.png" title="1" alt="1">
+            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/project-1.jpg" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-1.jpg"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                    class="fa fa-link"></i></a>
                         </div>
-
-                        <div class="partner-item">
-                            <img src="assets/images/client-01.png" title="2" alt="2">
+                    </div>
+                    <div class="p-4">
+                        <a class="d-block h5" href="">Data Analytics & Insights</a>
+                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
+                    </div>
+                </div>
+                <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/project-2.jpg" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-2.jpg"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                    class="fa fa-link"></i></a>
                         </div>
-
-                        <div class="partner-item">
-                            <img src="assets/images/client-01.png" title="3" alt="3">
+                    </div>
+                    <div class="p-4">
+                        <a class="d-block h5" href="">Marketing Content Strategy</a>
+                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
+                    </div>
+                </div>
+                <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/project-3.jpg" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-3.jpg"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                    class="fa fa-link"></i></a>
                         </div>
-
-                        <div class="partner-item">
-                            <img src="assets/images/client-01.png" title="4" alt="4">
+                    </div>
+                    <div class="p-4">
+                        <a class="d-block h5" href="">Business Target Market</a>
+                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
+                    </div>
+                </div>
+                <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/project-4.jpg" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-4.jpg"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                    class="fa fa-link"></i></a>
                         </div>
-
-                        <div class="partner-item">
-                            <img src="assets/images/client-01.png" title="5" alt="5">
-                        </div>
-
+                    </div>
+                    <div class="p-4">
+                        <a class="d-block h5" href="">Social Marketing Strategy</a>
+                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Project End --> --}}
 
 
-    <!-- Footer Starts Here -->
-    <footer>
+    {{-- <!-- Quote Start -->
+    <div class="container-xxl py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 footer-item">
-                    <h4>Finance Business</h4>
-                    <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien
-                        vitae.</p>
-                    <ul class="social-icons">
-                        <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i
-                                    class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    </ul>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-medium text-primary">Get A Quote</p>
+                    <h1 class="display-5 mb-4">Need Our Expert Help? We're Here!</h1>
+                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
+                        erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam
+                        et
+                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                    <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary"
+                        href="">
+                        <span class="btn-lg-square bg-primary" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </span>
+                        <span class="fs-5 fw-medium mx-4">+012 345 6789</span>
+                    </a>
                 </div>
-                <div class="col-md-3 footer-item">
-                    <h4>Useful Links</h4>
-                    <ul class="menu-list">
-                        <li><a href="#">Vivamus ut tellus mi</a></li>
-                        <li><a href="#">Nulla nec cursus elit</a></li>
-                        <li><a href="#">Vulputate sed nec</a></li>
-                        <li><a href="#">Cursus augue hasellus</a></li>
-                        <li><a href="#">Lacinia ac sapien</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 footer-item">
-                    <h4>Additional Pages</h4>
-                    <ul class="menu-list">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">How We Work</a></li>
-                        <li><a href="#">Quick Support</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 footer-item last-item">
-                    <h4>Contact Us</h4>
-                    <div class="contact-form">
-                        <form id="contact footer-contact" action="" method="post">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <fieldset>
-                                        <input name="name" type="text" class="form-control" id="name"
-                                            placeholder="Full Name" required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <fieldset>
-                                        <input name="email" type="text" class="form-control" id="email"
-                                            pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message"
-                                            required=""></textarea>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <button type="submit" id="form-submit" class="filled-button">Send
-                                            Message</button>
-                                    </fieldset>
-                                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <h2 class="mb-4">Get A Free Quote</h2>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Your Name</label>
                             </div>
-                        </form>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
+                                <label for="mail">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
+                                <label for="mobile">Your Mobile</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="service">
+                                    <option selected>Digital Marketing</option>
+                                    <option value="">Social Marketing</option>
+                                    <option value="">Content Marketing</option>
+                                    <option value="">E-mail Marketing</option>
+                                </select>
+                                <label for="service">Choose A Service</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 130px"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+    <!-- Quote Start --> --}}
 
-    <div class="sub-footer">
+
+    {{-- <!-- Team Start -->
+    <div class="container-xxl py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>Copyright &copy; 2020 Financial Business Co., Ltd.
-
-                        - Design: <a rel="nofollow noopener" href="https://templatemo.com"
-                            target="_blank">TemplateMo</a></p>
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">Our Team</p>
+                <h1 class="display-5 mb-5">Our Expert People Ready to Help You</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded overflow-hidden pb-4">
+                        <img class="img-fluid mb-4" src="img/team-1.jpg" alt="">
+                        <h5>Alex Robin</h5>
+                        <span class="text-primary">Founder & CEO</span>
+                        <ul class="team-social">
+                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded overflow-hidden pb-4">
+                        <img class="img-fluid mb-4" src="img/team-2.jpg" alt="">
+                        <h5>Adam Crew</h5>
+                        <span class="text-primary">Co Founder</span>
+                        <ul class="team-social">
+                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded overflow-hidden pb-4">
+                        <img class="img-fluid mb-4" src="img/team-3.jpg" alt="">
+                        <h5>Boris Johnson</h5>
+                        <span class="text-primary">Executive Manager</span>
+                        <ul class="team-social">
+                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item rounded overflow-hidden pb-4">
+                        <img class="img-fluid mb-4" src="img/team-4.jpg" alt="">
+                        <h5>Robert Jordan</h5>
+                        <span class="text-primary">Digital Marketer</span>
+                        <ul class="team-social">
+                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="{{ asset('website/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('website/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <!-- Team End --> --}}
 
 
-    <script src="{{ asset('website/assets/js/custom.js') }}"></script>
-    <script src="{{ asset('website/assets/js/owl.js') }}"></script>
-    <script src="{{ asset('website/assets/js/slick.js') }}"></script>
-    <script src="{{ asset('website/assets/js/accordions.js') }}"></script>
+    @include('guest.home.testimonial')
 
 
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
-    <script language="text/Javascript">
-        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-        function clearField(t) { //declaring the array outside of the
-            if (!cleared[t.id]) { // function makes it static and global
-                cleared[t.id] = 1; // you could use true and false, but that's more typing
-                t.value = ''; // with more chance of typos
-                t.style.color = '#fff';
-            }
-        }
-    </script>
 
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
+                    Distributed By <a class="fw-medium text-light" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('website/lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('website/lib/easing/easing.min.') }}"></script>
+    <script src="{{ asset('website/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('website/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('website/lib/lightbox/js/lightbox.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ asset('website/js/main.js') }}"></script>
 </body>
 
 </html>

@@ -1,56 +1,62 @@
- <!-- Header -->
- <div class="sub-header">
-     <div class="container">
-         <div class="row">
-             <div class="col-md-8 col-xs-12">
-                 <ul class="left-info">
-                     <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-                     <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
-                 </ul>
-             </div>
-             <div class="col-md-4">
-                 <ul class="right-icons">
-                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                     <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                 </ul>
-             </div>
-         </div>
-     </div>
- </div>
+  <!-- Topbar Start -->
+  <div class="container-fluid topbar text-white d-none d-lg-flex">
+      <div class="container py-3">
+          <div class="d-flex align-items-center">
+              <a href="index.html">
+                  <img style="height: 55px" src="{{ asset('website/logos/smidpng.png') }}" alt="">
+              </a>
+              <div class="ms-auto d-flex align-items-center">
+                  <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
+                  <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
+                  <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
+                  <div class="ms-3 d-flex">
+                      <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                              class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                              class="fab fa-twitter"></i></a>
+                      <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                              class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Topbar End -->
 
- <header class="">
-     <nav class="navbar navbar-expand-lg">
-         <div class="container">
-             <a class="navbar-brand" href="index.html">
-                 <h2>Finance Business</h2>
-             </a>
-             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navbarResponsive">
-                 <ul class="navbar-nav ml-auto">
-                     <li class="nav-item active">
-                         <a class="nav-link" href="#top">Home
-                             <span class="sr-only">(current)</span>
-                         </a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="about.html">About Us</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="services.html">Our Services</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="contact.html">Contact Us</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="one-page.html">One Page</a>
-                     </li>
-                 </ul>
-             </div>
-         </div>
-     </nav>
- </header>
+  <!-- Navbar Start -->
+  <div class="container-fluid bg-white sticky-top">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+              <a href="index.html" class="navbar-brand d-lg-none">
+                  <img style="height: 55px" src="{{ asset('website/logos/smidpng.png') }}" alt="">
+              </a>
+              <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                  data-bs-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <div class="navbar-nav">
+                      <a href="index.html" class="nav-item nav-link active">Home</a>
+                      <a href="service.html" class="nav-item nav-link">Products & Services</a>
+                      <a href="project.html" class="nav-item nav-link">Blog</a>
+                      <a href="about.html" class="nav-item nav-link">About</a>
+                      <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+                      {{-- <div class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                          <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                              <a href="feature.html" class="dropdown-item">Features</a>
+                              <a href="team.html" class="dropdown-item">Our Team</a>
+                              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                              <a href="quote.html" class="dropdown-item">Quotation</a>
+                              <a href="404.html" class="dropdown-item">404 Page</a>
+                          </div>
+                      </div> --}}
+
+                  </div>
+
+              </div>
+          </nav>
+      </div>
+  </div>
+  <!-- Navbar End -->
