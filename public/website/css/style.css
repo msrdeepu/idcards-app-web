@@ -81,18 +81,9 @@
     transition: 0.5s;
 }
 
-.navbar .navbar-nav .nav-link {
-    margin-right: 35px;
-    padding: 25px 0;
-    color: var(--dark);
-    font-size: 18px;
-    font-weight: 500;
-    outline: none;
-}
-
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--lightgreen);
 }
 
 .navbar .dropdown-toggle::after {
@@ -489,7 +480,7 @@
 
 .owl-item.center .testimonial-item,
 .testimonial-item:hover {
-    background: var(--primary);
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
 
 .owl-item.center .testimonial-item *,
@@ -593,12 +584,50 @@
 /* home */
 
 .topbar {
-    background-color: white;
+    background-color: #005534;
+}
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text for larger screens */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cce7d0; /* Lighter green for hover effect */
+}
+.navbar .navbar-nav .nav-link {
+    margin-right: 35px;
+    padding: 25px 0;
+    color: var(--light);
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .topbar {
+        background-color: #ffffff;
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); /* Keep the shadow for smaller devices */
+    }
+
+    .navbar-nav .nav-link {
+        color: #005534; /* Dark green text for smaller screens */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #003f24; /* Darker green for hover effect */
+    }
+    .navbar .navbar-nav .nav-link {
+        margin-right: 35px;
+        padding: 25px 0;
+        color: var(--dark);
+        font-size: 18px;
+        font-weight: 500;
+        outline: none;
+    }
 }
 .why-choose {
 }
 .custom-button-design {
-    background-color: var(--lightgreen) !important;
+    background-color: #237235 !important;
     color: white;
     border-radius: 10%;
 }
@@ -607,14 +636,15 @@
     color: white;
     border-radius: 10%;
 }
+
+/* service section */
 #serviceSection {
-    background-color: #b0cb1f;
-    background-image: linear-gradient(
-        315deg,
-        #b0cb1f 0%,
-        #b1c838 46%,
-        #249669 100%
-    );
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
 
 /* contact page */
+
+/* footer */
+.mega-footer {
+    background-color: #003f24;
+}

@@ -330,7 +330,7 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid mega-footer footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -383,7 +383,7 @@
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
+    <div class="container-fluid copyright py-4 credit-link">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -401,7 +401,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+    <a href="#" class="btn btn-lg btn-success btn-lg-square rounded-circle back-to-top"><i
             class="bi bi-arrow-up"></i></a>
 
 
