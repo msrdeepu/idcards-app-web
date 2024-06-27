@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Backend\SuperadminController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Front\ContactController;
 use App\Http\Controllers\Front\EmployeeController;
 use App\Http\Controllers\Front\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -19,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'home'])->name('main.home');
+Route::get('/contact', [ContactController::class, 'newcontact'])->name('contact.newcontact');
+Route::post('/contact', [ContactController::class, 'createcontact'])->name('contact.createcontact');
 
 Route::get('/default/dashboard', function () {
     return view('dashboard');

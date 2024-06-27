@@ -590,6 +590,8 @@
     color: var(--primary) !important;
 }
 
+/* home */
+
 .topbar {
     background-color: #237235;
 }
@@ -597,6 +599,11 @@
 }
 .custom-button-design {
     background-color: var(--lightgreen) !important;
+    color: white;
+    border-radius: 10%;
+}
+.custom-button-design-two {
+    background-color: #237235 !important;
     color: white;
     border-radius: 10%;
 }
@@ -609,3 +616,5 @@
         #249669 100%
     );
 }
+
+/* contact page */

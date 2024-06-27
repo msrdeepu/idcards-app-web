@@ -72,5 +72,45 @@
             </div>
         </div>
 
+        {{-- table --}}
+        <div class="card">
+            <div class="card-header">
+                <h4>Latest Messages</h4>
+            </div>
+            <div class="card-body p-0">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($data as $item)
+                            <tr>
+                                <th scope="row">{{ $item->id }}</th>
+                                <td>{{ $item->name }}</td>
+                                <td>{{ $item->phone }}</td>
+                                <td>{{ $item->subject }}</td>
+                                <td>{{ $item->message }}</td>
+                            </tr>
+                        @endforeach
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="mt-4">
+            {{ $data->links() }}
+        </div>
+
+
+
     </section>
 @endsection
