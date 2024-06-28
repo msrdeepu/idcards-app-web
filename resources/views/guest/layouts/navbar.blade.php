@@ -41,9 +41,9 @@
                     <div class="navbar-nav ">
 
                         <a href="{{ route('main.home') }}" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">Services</a>
+                        <a href="{{ route('main.services') }}" class="nav-item nav-link">Services</a>
                         <a href="{{ route('main.gallery') }}" class="nav-item nav-link">Gallery</a>
-                        <a href="project.html" class="nav-item nav-link">About</a>
+                        <a href="{{ route('main.about') }}" class="nav-item nav-link">About</a>
                         <a href="{{ route('contact.newcontact') }}" class="nav-item nav-link">Contact</a>
                         {{-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>

@@ -4,12 +4,14 @@
     <div class="container">
 
         <div class="portfolio-menu mt-2 mb-4">
-            <ul>
+            <ul class="filter-buttons">
                 <li class="btn btn-outline-dark active" data-filter="*">All</li>
                 <li class="btn btn-outline-dark" data-filter=".gts">Girls T-shirt</li>
                 <li class="btn btn-outline-dark" data-filter=".lap">Laptops</li>
-                <li class="btn btn-outline-dark text" data-filter=".selfie">selfie</li>
+                <li class="btn btn-outline-dark" data-filter=".selfie">Selfie</li>
+                <li class="btn btn-outline-dark" data-filter=".laneyard">Laneyard</li>
             </ul>
+
         </div>
         <div class="portfolio-item row">
             <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
@@ -21,6 +23,13 @@
                 </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                <a href="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg"
+                    class="fancylight popup-btn" data-fancybox-group="light">
+                    <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg"
+                        alt="">
+                </a>
+            </div>
+            <div class="item laneyard col-lg-3 col-md-4 col-6 col-sm">
                 <a href="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg"
                     class="fancylight popup-btn" data-fancybox-group="light">
                     <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg"
@@ -99,8 +108,8 @@
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
                 <a href="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg"
                     class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg"
-                        alt="">
+                    <img class="img-fluid"
+                        src="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg" alt="">
                 </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">

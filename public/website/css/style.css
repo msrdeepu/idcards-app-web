@@ -630,9 +630,23 @@
     background-color: #237235 !important;
     color: white;
     border-radius: 10%;
+    transition: background-color 0.3s ease, color 0.3s ease,
+        border-radius 0.3s ease;
+}
+.custom-button-design:hover {
+    background-color: purple !important;
+    color: white;
+    border-radius: 10%;
 }
 .custom-button-design-two {
     background-color: #237235 !important;
+    color: white;
+    border-radius: 10%;
+    transition: background-color 0.3s ease, color 0.3s ease,
+        border-radius 0.3s ease;
+}
+.custom-button-design-two:hover {
+    background-color: purple !important;
     color: white;
     border-radius: 10%;
 }
@@ -673,4 +687,50 @@
     /*width:303px;*/
     float: left;
     margin-bottom: 10px;
+}
+
+/* gallery */
+.filter-buttons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-buttons .btn {
+    padding: 10px 20px;
+    border: 2px solid #005534; /* Dark green border */
+    border-radius: 25px; /* Rounded corners */
+    color: #005534; /* Dark green text color */
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.filter-buttons .btn.active,
+.filter-buttons .btn:hover {
+    background-color: #005534; /* Dark green background on hover and active */
+    color: #ffffff; /* White text color on hover and active */
+}
+
+.filter-buttons .btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 85, 52, 0.5); /* Light green glow for focus */
+}
+
+/* about page */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

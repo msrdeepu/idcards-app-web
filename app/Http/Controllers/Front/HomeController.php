@@ -20,4 +20,12 @@ class HomeController extends Controller
     {
         return view('guest.gallery');
     }
+    public function about()
+    {
+        return view('guest.about');
+    }
+    public function services()
+    {
+        return view('guest.services');
+    }
 }

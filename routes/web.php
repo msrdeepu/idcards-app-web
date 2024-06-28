@@ -21,6 +21,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home'])->name('main.home');
 Route::get('/gallery', [HomeController::class, 'gallery'])->name('main.gallery');
+Route::get('/about', [HomeController::class, 'about'])->name('main.about');
+Route::get('/services', [HomeController::class, 'services'])->name('main.services');
 Route::get('/contact', [ContactController::class, 'newcontact'])->name('contact.newcontact');
 Route::post('/contact', [ContactController::class, 'createcontact'])->name('contact.createcontact');
 

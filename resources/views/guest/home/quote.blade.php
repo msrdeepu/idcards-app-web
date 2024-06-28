@@ -5,14 +5,12 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
 
-                    <h1 class="display-5 mb-4">Need Our Expert Help? We're Here!</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
-                        Clita
-                        erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
-                        diam
-                        et
-                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                    <h1 class="display-5 mb-4">Need Our Help? We're Here!</h1>
+                    <p>Get in touch with us for all your ID cards, NFC cards, Google review cards, and accessory needs.
+                        Our friendly team is here to assist you with inquiries, orders, and custom solutions. Reach out
+                        via phone, email, or visit our office. We look forward to serving you!. </p>
+                    <p>This concise and informative description invites customers to connect with your business and
+                        emphasizes your readiness to assist with their needs.</p>
                     <a class="d-inline-flex align-items-center rounded overflow-hidden border border-success"
                         href="">
                         <span class="btn-lg-square bg-success" style="width: 55px; height: 55px;">
@@ -22,7 +20,7 @@
                     </a>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Get A Free Quote</h2>
+                    <h2 class="mb-4">Let Us Connect</h2>
                     <div class="row g-3">
                         <form method="POST" action="{{ route('contact.createcontact') }}">
                             @csrf
