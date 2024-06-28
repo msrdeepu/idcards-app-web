@@ -6,9 +6,10 @@
                     <img style="height: 55px" src="{{ asset('website/logos/smidpng.png') }}" alt="">
                 </a>
                 <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
-                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
+                    <small class="ms-4 text-dark"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Nellore,
+                        India</small>
+                    <small class="ms-4 text-dark"><i class="fa fa-envelope me-3"></i>info@example.com</small>
+                    <small class="ms-4 text-dark"><i class="fa fa-phone-alt me-3"></i>+91-987456321</small>
                     <div class="ms-3 d-flex">
                         <a class="btn btn-sm-square btn-light text-success rounded-circle ms-2" href=""><i
                                 class="fab fa-facebook-f"></i></a>
@@ -39,11 +40,12 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ">
 
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Projects</a>
-                        <div class="nav-item dropdown">
+                        <a href="{{ route('main.home') }}" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">Services</a>
+                        <a href="{{ route('main.gallery') }}" class="nav-item nav-link">Gallery</a>
+                        <a href="project.html" class="nav-item nav-link">About</a>
+                        <a href="{{ route('contact.newcontact') }}" class="nav-item nav-link">Contact</a>
+                        {{-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
                                 <a href="feature.html" class="dropdown-item">Features</a>
@@ -52,8 +54,8 @@
                                 <a href="quote.html" class="dropdown-item">Quotation</a>
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div> --}}
+
 
                     </div>
                 </div>
