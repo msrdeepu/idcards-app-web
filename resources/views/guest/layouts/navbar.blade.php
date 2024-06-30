@@ -58,6 +58,10 @@
 
 
                     </div>
+                    <div class="ms-auto d-none d-lg-block">
+                        <a href="" class="btn bg-white rounded py-2 px-3" data-bs-toggle="modal"
+                            data-bs-target="#videoModal"><i class="fa fas fa-video text-success"></i></a>
+                    </div>
                 </div>
             </nav>
         </div>

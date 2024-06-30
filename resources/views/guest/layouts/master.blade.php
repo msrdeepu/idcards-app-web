@@ -38,6 +38,10 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('website/css/style.css') }}" rel="stylesheet">
+
+    {{-- toaster css --}}
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <body>
@@ -60,155 +64,31 @@
 
     @yield('content')
 
+    <!-- Video Modal Start -->
 
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <img class="" style="height: 55px" src="{{ asset('website/logos/smidpng.png') }}"
+                        alt="">
 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Responsive video container -->
+                    <div class="video-container">
+                        <video width="320" height="240" controls>
+                            <source src="{{ asset('website/videos/idcardsad.mp4') }}" type="video/mp4">
 
-    {{-- <!-- Project Start -->
-    <div class="container-xxl pt-5">
-        <div class="container">
-            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
-                style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">We've Done Lot's of Awesome Projects</h1>
-            </div>
-            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-1.jpg" alt="">
-                        <div class="project-overlay">
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-1.jpg"
-                                data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
-                                    class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Data Analytics & Insights</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
-                    </div>
-                </div>
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-2.jpg" alt="">
-                        <div class="project-overlay">
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-2.jpg"
-                                data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
-                                    class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Marketing Content Strategy</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
-                    </div>
-                </div>
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-3.jpg" alt="">
-                        <div class="project-overlay">
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-3.jpg"
-                                data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
-                                    class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Business Target Market</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
-                    </div>
-                </div>
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-4.jpg" alt="">
-                        <div class="project-overlay">
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-4.jpg"
-                                data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
-                                    class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Social Marketing Strategy</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
+                        </video>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Project End --> --}}
-
-
-
-
-
-    {{-- <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Team</p>
-                <h1 class="display-5 mb-5">Our Expert People Ready to Help You</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-1.jpg" alt="">
-                        <h5>Alex Robin</h5>
-                        <span class="text-primary">Founder & CEO</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-2.jpg" alt="">
-                        <h5>Adam Crew</h5>
-                        <span class="text-primary">Co Founder</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-3.jpg" alt="">
-                        <h5>Boris Johnson</h5>
-                        <span class="text-primary">Executive Manager</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-4.jpg" alt="">
-                        <h5>Robert Jordan</h5>
-                        <span class="text-primary">Digital Marketer</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End --> --}}
-
-
-
-
 
 
 
@@ -239,10 +119,19 @@
     <script src="{{ asset('website/lib/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('website/lib/lightbox/js/lightbox.min.js') }}"></script>
 
+    {{-- - toaster --}}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
     <!-- Template Javascript -->
     <script src="{{ asset('website/js/main.js') }}"></script>
 
-
+    <script>
+        @if ($errors->any())
+            @foreach ($errors->all() as $error)
+                toastr().error("{{ $error }}");
+            @endforeach
+        @endif
+    </script>
 
 </body>
 

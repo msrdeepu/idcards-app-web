@@ -23,6 +23,9 @@ class ContactController extends Controller
 
         $result = Contact::create($input);
 
-        return redirect()->back()->with('Success', 'Messege Sent Successfully');
+
+        toastr()->success('Messege Sent Succesfuly!');
+
+        return redirect()->back();
     }
 }

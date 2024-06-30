@@ -6,8 +6,8 @@
             <div class="row g-0">
                 <div class="col-lg-6">
                     <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="#"
+                            data-bs-target="#videoModal">
                             <span></span>
                         </button>
                     </div>
@@ -62,6 +62,37 @@
             </div>
         </div>
     </div>
+
+    {{-- bio --}}
+    <!-- About 1 - Bootstrap Brain Component -->
+    <section class="py-3 py-md-5">
+        <div class="container">
+            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                <div class="col-12 col-lg-6 col-xl-5 order-md-2">
+                    <img class="img-fluid rounded" loading="lazy"
+                        src="https://t3.ftcdn.net/jpg/02/94/62/14/360_F_294621430_9dwIpCeY1LqefWCcU23pP9i11BgzOS0N.jpg"
+                        alt="About 1">
+                    {{-- <img class="img-fluid rounded" loading="lazy"
+                        src="https://bootstrapbrain.com/demo/components/abouts/about-1/assets/img/about-img-1.jpg"
+                        alt="About 1"> --}}
+                </div>
+                <div class="col-12 col-lg-6 col-xl-7">
+                    <div class="row justify-content-xl-center">
+                        <div class="col-12 col-xl-11">
+                            <h2 class="mb-3">About the OWNER</h2>
+                            <p class="lead fs-4 text-secondary mb-3">We help people to build incredible brands and superior
+                                products. Our perspective is to furnish outstanding captivating services.</p>
+                            <p class="mb-5">We are a fast-growing company, but we have never lost sight of our core
+                                values. We believe in collaboration, innovation, and customer satisfaction. We are always
+                                looking for new ways to improve our products and services.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- bio --}}
 
 
 
