@@ -16,7 +16,7 @@
                         <span class="btn-lg-square bg-success" style="width: 55px; height: 55px;">
                             <i class="fa fa-phone-alt text-white"></i>
                         </span>
-                        <span class="fs-5 fw-medium mx-4 text-success">+012 345 6789</span>
+                        <span class="fs-5 fw-medium mx-4 text-success">+91-9885594577</span>
                     </a>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">

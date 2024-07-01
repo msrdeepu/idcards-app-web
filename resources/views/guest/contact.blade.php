@@ -17,7 +17,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6>Our Office</h6>
-                                <span>123 Street, New York, USA</span>
+                                <span>R.R Street, Nellore, AP, India</span>
                             </div>
                         </div>
                         <div class="d-flex border-bottom pb-3 mb-3">
@@ -26,17 +26,17 @@
                             </div>
                             <div class="ms-3">
                                 <h6>Call Us</h6>
-                                <span>+012 345 67890</span>
+                                <span>+91-9885594577</span>
                             </div>
                         </div>
                         <div class="d-flex border-bottom-0 pb-3 mb-3">
-                            <div class="flex-shrink-0 btn-square bg-success rounded-circle">
+                            {{-- <div class="flex-shrink-0 btn-square bg-success rounded-circle">
                                 <i class="fa fa-envelope text-white"></i>
-                            </div>
-                            <div class="ms-3">
+                            </div> --}}
+                            {{-- <div class="ms-3">
                                 <h6>Mail Us</h6>
                                 <span>info@example.com</span>
-                            </div>
+                            </div> --}}
                         </div>
 
 

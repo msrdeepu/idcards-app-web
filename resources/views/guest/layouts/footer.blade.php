@@ -4,9 +4,9 @@
          <div class="row g-5">
              <div class="col-lg-3 col-md-6">
                  <h4 class="text-white mb-4">Our Office</h4>
-                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Nellore, India</p>
-                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91-987456321</p>
-                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>R.R Street, Nellore, AP, India</p>
+                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91-9885594577</p>
+                 {{-- <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p> --}}
                  <div class="d-flex pt-3">
                      <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
                              class="fab fa-twitter"></i></a>
@@ -20,11 +20,11 @@
              </div>
              <div class="col-lg-3 col-md-6">
                  <h4 class="text-white mb-4">Quick Links</h4>
-                 <a class="btn btn-link" href="">Home</a>
-                 <a class="btn btn-link" href="">Services</a>
-                 <a class="btn btn-link" href="">Gallery</a>
-                 <a class="btn btn-link" href="">Contact</a>
-                 <a class="btn btn-link" href="">About</a>
+                 <a class="btn btn-link" href="{{ route('main.home') }}">Home</a>
+                 <a class="btn btn-link" href="{{ route('main.services') }}">Services</a>
+                 <a class="btn btn-link" href="{{ route('main.gallery') }}">Gallery</a>
+                 <a class="btn btn-link" href="{{ route('main.about') }}">About</a>
+                 <a class="btn btn-link" href="{{ route('contact.newcontact') }}">Contact</a>
              </div>
              <div class="col-lg-3 col-md-6">
                  <h4 class="text-white mb-4">Office Hours</h4>

@@ -12,8 +12,7 @@
                            <div class="service-text rounded p-5">
                                <div class="btn-square bg-light rounded-circle mx-auto mb-4"
                                    style="width: 64px; height: 64px;">
-                                   <img class="img-fluid" src="{{ asset('website/img/icon/icon-5.png') }}"
-                                       alt="Icon">
+                                   <i class="fa fas fa-credit-card fs-1 text-primary"></i>
                                </div>
                                <h5 class="mb-3">NFC Cards</h4>
                                    <p class="mb-0">Enhance your business connectivity with our cutting-edge NFC cards.
@@ -27,8 +26,7 @@
                            <div class="service-text rounded p-5">
                                <div class="btn-square bg-light rounded-circle mx-auto mb-4"
                                    style="width: 64px; height: 64px;">
-                                   <img class="img-fluid" src="{{ asset('website/img/icon/icon-6.png') }}"
-                                       alt="Icon">
+                                   <i class="fa fas fa-id-card fs-1 text-warning"></i>
                                </div>
                                <h5 class="mb-3">ID Cards</h4>
                                    <p class="mb-0">Professional and durable ID cards to boost your business's security
@@ -57,8 +55,7 @@
                            <div class="service-text rounded p-5">
                                <div class="btn-square bg-light rounded-circle mx-auto mb-4"
                                    style="width: 64px; height: 64px;">
-                                   <img class="img-fluid" src="{{ asset('website/img/icon/icon-8.png') }}"
-                                       alt="Icon">
+                                   <i class="fa fa-brands fa-google fs-1 text-danger"></i>
                                </div>
                                <h5 class="mb-3">Google Review Cards</h4>
                                    <p class="mb-0">Increase your business's credibility with custom Google review

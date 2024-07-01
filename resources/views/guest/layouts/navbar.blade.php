@@ -6,10 +6,10 @@
                     <img style="height: 55px" src="{{ asset('website/logos/smidpng.png') }}" alt="">
                 </a>
                 <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4 text-dark"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Nellore,
+                    <small class="ms-4 text-dark"><i class="fa fa-map-marker-alt me-3"></i>R.R Street, Nellore, AP,
                         India</small>
-                    <small class="ms-4 text-dark"><i class="fa fa-envelope me-3"></i>info@example.com</small>
-                    <small class="ms-4 text-dark"><i class="fa fa-phone-alt me-3"></i>+91-987456321</small>
+                    {{-- <small class="ms-4 text-dark"><i class="fa fa-envelope me-3"></i>info@example.com</small> --}}
+                    <small class="ms-4 text-dark"><i class="fa fa-phone-alt me-3"></i>+91-9885594577</small>
                     <div class="ms-3 d-flex">
                         <a class="btn btn-sm-square btn-light text-success rounded-circle ms-2" href=""><i
                                 class="fab fa-facebook-f"></i></a>
